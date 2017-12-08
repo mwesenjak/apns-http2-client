@@ -22,6 +22,8 @@ make
 
 ## How to use
 
+Startup:
+
 ~~~sh
 usage: apns-http2-client CERT KEY PASSPHRASE TOPIC MODE
 
@@ -30,6 +32,19 @@ usage: apns-http2-client CERT KEY PASSPHRASE TOPIC MODE
 	PASSPHRASE	- passphrase for KEY
 	TOPIC		- usually your bundle ID of the app (see: Apple - Communicating with APNs)
 	MODE		- either SANDBOX or PRODUCTION (depending on your certs)
+~~~
+After the client initialized successfully, you'll have the interactive console.
+
+Interactive mode:
+
+~~~sh
+...
+[INFO]	 client successfully initialized and connected
+[INFO]	 submit your requests as follows:
+[INFO]	 <device_token> <payload>
+[INFO]	 enter 'quit' or 'exit' to close the session
+
+APNs>
 ~~~
 
 ~mwesenjak
